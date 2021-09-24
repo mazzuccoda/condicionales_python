@@ -30,3 +30,33 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+numero_1 = float(input("Ingrese el primer registro de temperatura\n"))
+numero_2 = float(input("Ingreso el segundo registro de temperatura\n"))
+numero_3 = float(input("Ingreso el tercer registro de temperatura\n"))
+
+maximo = 0 
+minimo = 0
+promedio = 0
+if numero_1 > numero_2 and numero_1 > numero_3:
+    maximo = numero_1
+elif numero_2 > numero_1 and numero_2 > numero_3:
+    maximo = numero_2
+elif numero_3 > numero_1 and numero_3 > numero_2:
+    maximo = numero_3
+else:
+    print("Todos los numeros ingresados son iguales") 
+
+
+if numero_1 < numero_2 and numero_1 < numero_3:
+    minimo = numero_1
+elif numero_2 < numero_1 and numero_2 < numero_3:
+    minimo = numero_2
+elif numero_3 < numero_1 and numero_3 < numero_2:
+    minimo = numero_3
+else:
+    print("Todos los numeros ingresados son iguales")
+
+promedio = (numero_1+numero_2+numero_3)/3
+print("La maxima temperatura registrada es", maximo)
+print("La minima temperatura registrada es", minimo)
+print("El promedio de temperatura registrada es", round(promedio,2))
