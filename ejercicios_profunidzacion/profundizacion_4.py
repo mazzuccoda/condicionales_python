@@ -50,29 +50,29 @@ cant_2 = ""
 cant_3 = ""
 
 #selecciono la primera en orden alfabetico
-if palabra_1[0] >= palabra_2[0] and palabra_1[0] >= palabra_3[0]:
+if palabra_1 >= palabra_2 and palabra_1 >= palabra_3:
     alf_3 = palabra_1
-elif palabra_2[0] >= palabra_1 and palabra_2[0] >= palabra_3[0]:
+elif palabra_2 >= palabra_1 and palabra_2 >= palabra_3:
     alf_3 = palabra_2
-elif palabra_3[0] >= palabra_1[0] and palabra_3[0] >= palabra_2[0]:
+elif palabra_3 >= palabra_1 and palabra_3 >= palabra_2:
     alf_3 = palabra_3
 
 
 #selecciono la segunda en orden alfabetico
-if palabra_1[0] >= palabra_2[0] and palabra_1[0] <= palabra_3[0]:
+if palabra_1 >= palabra_2 and palabra_1 <= palabra_3:
     alf_2 = palabra_1
-elif palabra_2[0] >= palabra_1 and palabra_2[0] <= palabra_3[0]:
+elif palabra_2 >= palabra_1 and palabra_2 <= palabra_3:
     alf_2 = palabra_2
-elif palabra_3[0] >= palabra_1[0] and palabra_3[0] <= palabra_2[0]:
+elif palabra_3 >= palabra_1 and palabra_3 <= palabra_2:
     alf_2 = palabra_3
 
 
 #selecciono la tercera en orden alfabetico
-if palabra_1[0] <= palabra_2[0] and palabra_1[0] <= palabra_3[0]:
+if palabra_1 <= palabra_2 and palabra_1 <= palabra_3:
     alf_1 = palabra_1
-elif palabra_2[0] <= palabra_1 and palabra_2[0] <= palabra_3[0]:
+elif palabra_2 <= palabra_1 and palabra_2 <= palabra_3:
     alf_1 = palabra_2
-elif palabra_3[0] <= palabra_1[0] and palabra_3[0] <= palabra_2[0]:
+elif palabra_3 <= palabra_1 and palabra_3 <= palabra_2:
     alf_1 = palabra_3
 
 #selecciono la primera por cantidad de letras
